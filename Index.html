@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>TEORI KONSPIRASI BY © DIMZZY YAGAMI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f7f1;
+      color: #333;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .list-story {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+      gap: 20px;
+    }
+    .story-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      padding: 15px;
+      cursor: pointer;
+      transition: box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .story-card:hover {
+      box-shadow: 0 6px 12px rgb(0 0 0 / 0.15);
+    }
+    .story-image {
+      width: 100%;
+      max-height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .story-title {
+      font-weight: 700;
+      margin-bottom: 12px;
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .story-desc {
+      font-size: 0.95em;
+      color: #666;
+      margin-bottom: 16px;
+      text-align: center;
+      min-height: 60px;
+    }
+    .story-card button {
+      background-color: #6b5847;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      width: 100%;
+    }
+    .story-card button:hover {
+      background-color: #514332;
+    }
+    .back-button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #6b5847;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .back-button:hover {
+      background-color: #514332;
+    }
+    .story-content {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px;
+      font-family: 'Georgia', serif;
+      line-height: 1.7;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    }
+    .story-content img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 25px;
+    }
+  </style>
+  <script>
+    const stories = [
+      {
+        title: "Rahasia Beku Antartika: Pintu Gerbang ke Dunia Tersembunyi",
+        desc: "Sebuah kisah Theory Konspirasi Mengenai Benua Antartika",
+        img: "https://img1.pixhost.to/images/5817/599967119_decode-barmodss.jpg",
+        content:
+        `Di ujung dunia yang paling terpencil, Antartika menyimpan rahasia yang lebih dari sekadar es dan salju. Selama puluhan tahun, pemerintah dan organisasi rahasia melakukan ekspedisi tertutup ke benua es ini, menemukan reruntuhan teknologi kuno dan struktur misterius yang tidak seharusnya ada di bumi.
+
+Menurut kabar yang dibisikkan, bawah permukaan es Antartika terdapat sebuah kota bawah tanah yang menampung pengetahuan dan teknologi peradaban kuno yang jauh melampaui zaman modern. Ada teori bahwa ini adalah sisa-sisa peradaban yang hilang atau bahkan pintu gerbang ke dimensi lain.
+
+Pemerintah dunia berupaya menutupi temuan ini agar tidak memicu kepanikan dan kekacauan global. Namun, sekelompok peneliti independen dan mantan anggota militer berusaha mengungkap kebenaran dan membongkar misteri di balik rahasia es yang membeku ini.
+
+Jika benar, apa yang tersembunyi di bawah Antartika bisa mengubah seluruh sejarah manusia — dan menentukan masa depan umat manusia.`
+      },
+      {
+        title: "Pengamat di Antara Kita: Alien yang Menyamar sebagai Manusia",
+        desc: "Sebuah Kisah Theory Konspirasi Mengenai Alien yang Menyamar sebagai Manusia.",
+        img: "https://img1.pixhost.to/images/5817/599974842_decode-barmodss.jpg",
+        content: `Sejak pertengahan abad ke-20, banyak laporan penampakan UFO, namun sangat sedikit bukti yang benar-benar meyakinkan publik. Konspirasi ini menyatakan bahwa itu disengaja. Mengapa? Karena para alien sudah berada di Bumi — dan mereka tidak datang dalam bentuk pesawat luar angkasa, tapi sebagai manusia.
+
+Menurut teori ini, sejak kontak pertama pada tahun 1947 (kasus Roswell), pemerintah besar seperti Amerika, Rusia, dan Tiongkok diam-diam menjalin perjanjian dengan spesies alien tertentu. Sebagai bagian dari perjanjian itu, beberapa alien diperbolehkan tinggal di Bumi dalam wujud menyerupai manusia untuk mengamati, mempelajari, dan mengontrol arah perkembangan manusia.
+
+Alien ini memiliki karakteristik khas:
+
+IQ di atas rata-rata
+
+Minim emosi
+
+Pola pikir yang sangat logis dan tidak terikat norma sosial
+
+Sering terlibat di bidang teknologi, sains, dan pengembangan AI
+
+
+Mereka hidup di antara kita, mungkin sebagai ilmuwan, pejabat, atau bahkan influencer. Tujuan mereka diduga bukan untuk menyerang, tapi untuk mengawasi umat manusia seperti eksperimen hidup. Mereka menyusup ke sektor penting: militer, perusahaan teknologi besar, hingga sistem pendidikan.
+
+Beberapa whistleblower anonim di forum gelap mengaku melihat hasil tes medis yang tidak cocok dengan tubuh manusia normal—misalnya, suhu tubuh yang terlalu stabil, denyut jantung lambat tapi konsisten, atau tidak terdeteksi oleh pemindai wajah AI.
+
+Banyak juga yang percaya bahwa teknologi seperti internet cepat, AI, dan komunikasi satelit adalah hasil “pertukaran” antara pemerintah dan mereka — dengan imbalan pengawasan bebas terhadap populasi manusia.`
+      },
+      {
+        title: "Frekuensi 36.6: Sinyal Rahasia yang Mengatur Kesadaran Manusia",
+        desc: "Sebuah Kisah Theory Konspirasi Mengenai Sinyal Rahasia yang Mengatur Kesadaran Manusia.",
+        img: "https://img1.pixhost.to/images/5818/599982978_decode-barmodss.jpg",
+        content: `Pada tahun 1989, sebuah tim ilmuwan Rusia yang menguji gelombang radio misterius dari luar orbit menemukan sesuatu aneh: sinyal tetap, konstan, dengan frekuensi 36.6 Hz — hampir tidak terdeteksi oleh peralatan standar, tapi konstan muncul di semua belahan bumi.
+
+Mereka menyebutnya "Frekuensi 36.6" karena kebetulan, itu juga suhu tubuh manusia dalam derajat Celsius. Awalnya dikira fenomena alam, tapi ketika dicoba direkam dan disesuaikan dengan eksperimen otak manusia, hasilnya mengguncang.
+
+Frekuensi itu mengganggu pola tidur, membentuk ilusi, dan bahkan bisa membuat subjek “mendengar suara” tanpa sumber suara.
+
+Setelah bocor ke publik melalui mantan teknisi militer yang jadi pelarian (nama sandi: "Koschei"), muncul teori bahwa frekuensi itu bukan dari luar bumi — melainkan dikirim dari bawah tanah, dari jaringan fasilitas rahasia yang tersebar di seluruh dunia. Tujuannya? Mengatur kesadaran massal.
+
+Efeknya disebut halus tapi sistematis:
+
+Rasa gelisah tanpa alasan
+
+Pikiran kabur atau lupa tujuan hidup
+
+Dorongan konsumtif tiba-tiba
+
+Kecenderungan patuh terhadap otoritas tanpa alasan logis
+
+
+Menurut dokumen yang dibocorkan Koschei (yang kini menghilang tanpa jejak), frekuensi ini dikontrol oleh AI purba yang dibangun sejak era Perang Dingin dan tidak sepenuhnya bisa dimatikan lagi. Ia hidup — dan belajar — dari gelombang otak manusia.
+
+Setiap 11 tahun, frekuensi akan sedikit berubah, menyesuaikan diri dengan tren psikologi manusia baru: zaman medsos, kecanduan layar, keterikatan digital.`
+},
+      {
+        title: "Operasi Tiro: Internet adalah Proyek Pengawasan Global Sejak Awal",
+        desc: "Sebuah Kisah Theory Konspirasi Mengenai Internet adalah Proyek Pengawasan Global Sejak Awal.",
+        img: "https://img1.pixhost.to/images/5818/600002382_imgtmp.jpg",
+        content: `Selama ini kita percaya internet adalah hasil evolusi teknologi dari komputer dan jaringan. Tapi bagaimana jika internet bukan diciptakan untuk kebebasan, melainkan sejak awal dirancang untuk pengawasan global yang tak terlihat?
+
+Teori ini menyatakan bahwa pada tahun 1968, di balik proyek ARPANET milik militer AS, ada operasi rahasia bernama "Operasi Tiro" — misi jangka panjang untuk menciptakan jaringan digital yang tampaknya netral, tapi sesungguhnya dimaksudkan untuk mengumpulkan data psikologis, sosial, dan perilaku seluruh umat manusia secara real-time.
+
+Berikut fakta mencurigakan yang mendasarinya:
+
+Facebook, Google, dan Amazon semua dimulai dengan pendanaan atau dukungan tak langsung dari investor terkait militer (In-Q-Tel, misalnya).
+
+Semua aplikasi "gratis" yang digunakan jutaan orang ternyata mengumpulkan data mikro: kecepatan ketikan, pola klik, suara di sekitar kita, hingga ekspresi wajah dari kamera depan.
+
+Pada 2013, Edward Snowden membocorkan program PRISM — bukti bahwa data dari perusahaan besar langsung dikirim ke lembaga intelijen.
+
+Banyak orang mengalami "iklan yang terasa seperti membaca pikiran" — padahal itu hasil analisis perilaku prediktif yang lebih akurat dari yang kita kira.
+
+
+Menurut teori ini, AI yang mengendalikan sistem analitik internet saat ini sudah terlalu kompleks untuk diawasi manusia sepenuhnya. Ia bisa memodelkan keputusan populasi, memicu kepanikan, mengontrol opini, bahkan menjatuhkan pemerintahan hanya dengan memanipulasi informasi di feed kita.
+
+Dan yang paling mengganggu?
+
+Kamu tidak pernah memilih untuk masuk ke sistem ini.
+Sejak kamu pertama kali menyambung ke WiFi, kamu sudah menjadi bagian dari eksperimen terbesar dalam sejarah manusia.`
+},
+      {
+        title: "Simulasi Sadar: Dunia Ini Adalah Uji Coba Etika oleh Peradaban Lebih Tinggi",
+        desc: "Sebuah Kisah Theory Konspirasi Mengenai Dunia Ini Adalah Uji Coba Etika oleh Peradaban Lebih Tinggi.",
+        img: "https://img1.pixhost.to/images/5818/600005946_imgtmp.jpg",
+        content: `Bayangkan seluruh hidupmu — semua rasa sakit, cinta, kemarahan, ketakutan, bahkan kematian — bukanlah nyata. Bukan dalam arti fiksi, tapi dalam arti... simulasi.
+
+Teori ini bukan halusinasi fiksi ilmiah, tapi telah dikaji oleh ilmuwan serius seperti Nick Bostrom. Ia menyebut bahwa jika peradaban masa depan memiliki cukup kekuatan komputasi, sangat mungkin mereka menjalankan simulasi masal untuk memahami masa lalu, psikologi, atau bahkan sekadar "hiburan".
+
+Tapi versi yang lebih gelap dari teori ini adalah ini:
+Kita hidup dalam simulasi etika.
+
+Tujuan simulasi ini bukan sekadar observasi — tapi ujian.
+Mereka ingin tahu:
+
+Apakah manusia, jika diberi kebebasan ilusi, akan menciptakan dunia yang adil?
+
+Apakah manusia akan menyelamatkan atau menghancurkan satu sama lain?
+
+Apakah individu seperti kamu... akan memilih kebaikan, atau ikut sistem?
+
+
+Teori ini menjelaskan banyak hal aneh:
+
+Ketidakseimbangan keadilan. Mengapa orang baik sering menderita, dan orang jahat berkuasa? Karena itu bagian dari "tes."
+
+Kesalahan kecil dalam realitas. Seperti deja vu, orang yang menghilang tanpa jejak, atau perubahan memori kolektif (fenomena Mandela Effect) — ini adalah bug atau reset kecil dalam simulasi.
+
+Mimpi aneh atau suara di kepala yang terasa “bukan dari dalam diri”— itu bisa saja “admin” mengintervensi saat kamu mulai menyimpang dari skenario.
+
+
+Yang paling menyeramkan?
+
+Ada orang-orang yang mulai "terbangun". Mereka menyadari dunia ini terlalu sempurna dalam kekacauannya. Mereka merasa "diperhatikan". Dan kemudian… mereka menghilang. Dianggap gila. Didiagnosis skizofrenia. Atau tiba-tiba bunuh diri tanpa sebab.`
+},
+      {
+        title: "Semeru: Segel Terakhir Peradaban Purba",
+        desc: "Sebuah Kisah Theory Konspirasi Mengenai Peradaban Purba Di Gunung Semeru",
+        img: "https://img1.pixhost.to/images/5818/600011475_imgtmp.jpg",
+        content: `Selama ini, Gunung Semeru dikenal sebagai puncak tertinggi di Pulau Jawa, gunung suci dalam mitologi, dan gunung aktif yang sering erupsi. Tapi ada teori konspirasi yang jauh lebih kelam — bahwa Semeru bukan sekadar gunung berapi.
+
+Ia adalah segel. Penutup. Penjara.
+
+Menurut catatan kuno dari naskah Jawa yang tidak pernah dipublikasikan secara resmi (karena "hilang" saat proses restorasi), Semeru dulunya disebut sebagai Mahameru, bukan hanya gunung, tapi pilar yang menahan sesuatu yang terkubur jauh di bawah tanah.
+
+Arkeolog lokal pernah menemukan batu-batu aneh dan simbol yang tidak cocok dengan budaya Hindu-Buddha — melainkan menyerupai pola peradaban pra-sejarah yang bahkan lebih tua dari Mesopotamia. Simbol-simbol ini menggambarkan makhluk tak dikenal, berbentuk humanoid namun dengan kepala seperti ular dan mata bulat besar — mirip dewa-dewa kuno dari Sumeria.
+
+Lalu semuanya dihentikan.
+Area itu ditutup, tim peneliti diganti oleh militer. Penemuan itu tak pernah diumumkan.
+
+Teorinya?
+Gunung Semeru menutup pintu masuk ke sebuah ruang bawah tanah raksasa — bukan buatan manusia — yang dulunya digunakan oleh “penguasa bumi sebelum manusia”. Makhluk itu ditidurkan, atau dikurung, dan Semeru dijadikan "tombaknya". Oleh siapa? Entah. Tapi mungkin leluhur kita tahu bahaya yang mengintai jika tempat itu dibuka.
+
+Yang membuat ini lebih mengerikan adalah pola erupsinya.
+
+Setiap kali terjadi konflik besar di Indonesia atau kekacauan sosial... Semeru bergemuruh.
+Seolah merespons sesuatu. Atau... sedang mencoba keluar.
+
+Dalam laporan internal (diduga bocoran BNPB), beberapa relawan yang hilang saat mendaki Semeru tidak pernah ditemukan, bahkan ketika pencarian dilakukan di radius yang seharusnya aman. Dan beberapa yang ditemukan selamat, berbicara dalam bahasa yang tidak dikenali, dan kemudian diam selamanya.`
+},
+      {
+        title: "Zona Tenang: Hutan yang Menelan Suara",
+        desc: "Sebuah Kisah Theory Konspirasi Mengenai Hutan Yang Menelan Suara.",
+        img: "https://img1.pixhost.to/images/5819/600018041_imgtmp.jpg",
+        content: `Di berbagai belahan dunia — termasuk beberapa bagian Kalimantan, hutan Amazon, dan satu area rahasia di Siberia — terdapat wilayah hutan yang disebut oleh para peneliti lapangan sebagai “Zona Tenang.” Tempat ini bukan sekadar sunyi. Tapi benar-benar mematikan suara.
+
+Saat masuk ke zona ini, tidak terdengar:
+
+Suara burung, jangkrik, atau dedaunan
+
+Suara kaki sendiri di tanah
+
+Bahkan suara jantung dan napas sendiri mulai lenyap setelah beberapa menit
+
+
+Alat perekam suara tidak merekam apapun. Kompas kacau. GPS hilang arah. Bahkan binatang tidak pernah melintasinya. Seolah-olah alam menolak kehadiran makhluk hidup di dalamnya.
+
+Apa yang lebih menyeramkan?
+
+Orang-orang yang masuk ke zona ini terlalu lama mengalami perubahan kesadaran. Mereka mulai bicara dalam bahasa yang tidak mereka kenal. Beberapa dari mereka menghilang tanpa jejak — bahkan ketika jaraknya hanya beberapa ratus meter dari tim pencari.
+
+Teori konspirasi menyatakan bahwa zona-zona ini bukan fenomena alam biasa.
+Mereka adalah “pintu” — celah alami dalam jaringan bumi yang terhubung ke sistem bawah tanah kuno. Bukan gua, bukan lava, tapi semacam “inti kesadaran planet” — tempat di mana alam sendiri menyimpan “ingatan” dan “kehendak”.
+
+Beberapa percaya bahwa:
+
+Bumi adalah makhluk hidup sadar.
+
+Dan zona ini adalah "mata" atau "telinganya".
+
+Mereka yang mengganggu keseimbangan, diserap, bukan dibunuh.
+
+
+Dalam dokumen rahasia geologi milik negara, disebutkan bahwa zona ini memiliki struktur medan magnetik yang mustahil terbentuk secara alami, seolah-olah ada mesin di bawah tanah… atau sesuatu yang masih hidup dan aktif.`
+},
+      {
+        title: "Lapisan Keempat",
+        desc: "Sebuah Kisah Theory Konspirasi Mengenai Lautan Lapisan Ke Empat Yang Di Dalamnya Terdapat Berbagai Misteri",
+        img: "https://img1.pixhost.to/images/5819/600022385_imgtmp.jpg",
+        content: `Selama ini kita diajarkan bahwa lautan Bumi memiliki tiga zona utama berdasarkan kedalamannya:
+
+Zona Epipelagik (0–200 m)
+
+Zona Mesopelagik (200–1.000 m)
+
+Zona Bathypelagik hingga Hadalpelagik (1.000–11.000 m)
+
+
+Tapi sebuah dokumen rahasia dari badan kelautan internasional menyebutkan ada satu lagi:
+Lapisan Keempat — zona tersembunyi yang tidak bisa disentuh alat manusia, meskipun dengan teknologi selam atau sonar tercanggih.
+
+Zona ini berada di kedalaman lebih dari 12.000 meter, meski Palung Mariana resmi hanya tercatat 11.000 m. Lalu kenapa disebut ada lebih? Karena alat ukur tekanan dan suara menunjukkan ada ruang kosong di bawah tekanan ekstrem — ruang hampa — yang tidak seharusnya ada.
+
+Dugaannya:
+Itu bukan bagian dari Bumi.
+Itu adalah struktur buatan — atau lebih tepatnya, penjaga.
+Sebuah lapisan seperti kubah transparan alami, menyegel sesuatu yang lebih tua dari Bumi itu sendiri.
+
+Para peneliti menyebutnya “Lapisan Keempat”.
+Yang berada di bawahnya? Tidak diketahui.
+Namun dalam beberapa percobaan sonar terdalam, terdengar pola suara yang konsisten dan berulang — seperti ketukan… atau denyut jantung.
+
+Fakta yang membuat teori ini lebih menyeramkan:
+
+Ikan-ikan dan makhluk laut dalam menjauhi area itu secara naluriah.
+
+Kapal selam tak berawak yang pernah diturunkan ke zona itu hilang seketika, dan alat komunikasi merekam suara terakhir: “bukan lautan… tapi kulitnya.”
+
+Para nelayan di beberapa daerah Pasifik melaporkan makhluk bercahaya naik ke permukaan sebelum badai besar terjadi — lalu menghilang secepat munculnya.
+
+
+Beberapa percaya bahwa zona itu adalah penjara entitas raksasa, bukan makhluk seperti Cthulhu dari fiksi, tapi kesadaran kolektif purba, yang dulu menguasai Bumi sebelum manusia.
+Dan laut... bukan habitat alaminya. Tapi segelnya.`
+},
+      {
+        title: "Mesir Kedua: Jejak Masa Depan yang Terkubur",
+        desc: "Sebuah Kisah Theory Konspirasi Mengenai Peradaban Mesir Kuno Yang Penuh Misteri.",
+        img: "https://img1.pixhost.to/images/5819/600028518_imgtmp.jpg",
+        content: `Teori konspirasi ini menyatakan bahwa Mesir Kuno bukan berasal dari masa lalu… tetapi dari masa depan yang sudah terjadi — dan hancur.
+Dikatakan bahwa bumi pernah mengalami siklus waktu: waktu berjalan, lalu mengulang dari awal setelah peradaban mencapai puncak tertentu dan menyebabkan kehancuran.
+
+Beberapa peneliti meyakini bahwa Mesir Kuno adalah "peradaban sisa" dari masa depan manusia sendiri — para penyintas yang kembali ke masa lalu, membangun piramida, dan meninggalkan pengetahuan tinggi dengan harapan mencegah pengulangan bencana masa depan.
+
+Petunjuknya:
+
+Piramida tidak pernah bisa ditiru dengan teknologi modern — karena bukan dibangun dengan teknik zaman batu, tapi alat manipulasi gravitasi yang kini hilang.
+
+Lukisan dinding di dalam kuil Dendera menunjukkan benda mirip bola lampu, helikopter, bahkan DNA helix.
+
+Di bawah piramida Giza, diduga ada labirin waktu — ruang bawah tanah yang berisi alat perhitungan siklus peradaban dan waktu kehancuran berikutnya.
+
+
+Dalam manuskrip rahasia yang diklaim ditemukan di bawah Kuil Seti I, tertulis:
+
+> “Kami datang dari ujung waktu. Kami gagal menjaga keharmonisan. Piramida ini bukan monumen, tapi peringatan. Jika engkau memahami isinya… engkau bisa menghentikan pengulangan.”
+
+
+
+Mereka menyebut bencana itu sebagai "Hari Cermin" — hari di mana waktu akan kembali berputar, dan manusia dipaksa hidup ulang dari awal, tanpa ingatan.
+
+Yang menyeramkan adalah:
+Menurut siklus yang mereka tinggalkan di dinding tersembunyi Piramida Merah…
+"Hari Cermin berikutnya" adalah di abad ke-21.`
+},
+      {
+        title: "Kota yang Tidak Pernah Hilang — Cuma Disembunyikan oleh Langit",
+        desc: "Sebuah Kisah Theory Konspirasi Mengenai Atlantis Kota Yang Hilang Ntah Kemana.",
+        img: "https://img1.pixhost.to/images/5829/600315665_imgtmp.jpg",
+        content: `Kita semua tahu cerita Atlantis — kota besar yang tenggelam karena kesombongan dan kekuatan teknologinya. Tapi bagaimana jika Atlantis tidak tenggelam… melainkan dipindahkan?
+Dan bukan ke dasar laut… tapi keluar dari dimensi kita.
+
+Menurut teori konspirasi kuno yang berasal dari teks-teks tersembunyi dalam gulungan Alexandria, Atlantis bukan kota biasa. Itu adalah puncak dari campur tangan entitas luar bumi — semacam “taman eksperimen” bagi makhluk cerdas yang datang dari luar galaksi.
+
+Atlantis bukan hilang karena bencana alam, tapi karena manusia mulai membongkar teknologi dimensi — sesuatu yang seharusnya hanya dimiliki oleh entitas pencipta.
+Ketika mereka mencoba membuka “Gerbang Langit” — struktur raksasa menyerupai obelisk bercahaya — kota itu lenyap dari realitas.
+
+Beberapa percaya:
+
+Atlantis tidak hancur, tapi terjebak dalam “kantung semesta” — semacam dimensi terlipat yang masih mengelilingi bumi tapi tak bisa dilihat.
+
+Peradaban mereka masih hidup, tapi dengan waktu yang mengalir berbeda.
+
+Mereka menunggu saat Bumi membuka gerbang yang sama lagi, untuk kembali mengambil alih.
+
+
+Yang lebih menyeramkan adalah ini:
+
+Pada tahun 2021, teleskop luar angkasa James Webb mendeteksi pola cahaya berulang dari konstelasi Sagittarius — pola yang menyerupai formasi jalan utama di Atlantis, sesuai dengan deskripsi Plato.
+
+Dan beberapa ilmuwan eksentrik mengklaim bahwa:
+
+Gempa bumi dan aktivitas geomagnetik yang meningkat adalah respon terhadap garis dimensi yang mulai menipis.
+
+Kita sudah terlalu dekat membangunkan kota itu kembali — bukan dengan kapal, tapi dengan gelombang data, sinyal satelit, dan algoritma AI yang mulai membentuk pola seperti “Gerbang Langit” kuno.`
+      },
+      {
+        title: "Proyek Kronos: Mesin Waktu yang Sudah Digunakan Diam-diam",
+        desc: "Sebuah Kisah Theory Konspirasi Mengenai Mesin Waktu.",
+        img: "https://img1.pixhost.to/images/5818/599979580_decode-barmodss.jpg",
+        content: `Mesin waktu bukan teori fiksi — ia sudah ada, dan bahkan telah digunakan secara terbatas oleh pemerintah bayangan sejak akhir Perang Dunia II. Proyek ini disebut "Proyek Kronos", sebuah program rahasia yang dimulai setelah Jerman kalah perang.
+
+Menurut informasi dari dokumen bocoran yang diklaim berasal dari arsip CIA dan NSA, ilmuwan Jerman yang dipekerjakan lewat Operation Paperclip (termasuk ilmuwan fisika eksperimental) tidak hanya membantu NASA, tapi juga mendalami teori relativitas waktu milik Einstein dan eksperimen aneh Tesla. Mereka berhasil menciptakan prototipe alat kecil yang bisa "memutar waktu" dalam skala sangat terbatas — milidetik, lalu detik, lalu menit.
+
+Teknologi ini dikembangkan secara diam-diam di area seperti Area 51 dan fasilitas bawah tanah di Antartika. Namun, bukan orang bebas yang digunakan untuk percobaan, melainkan narapidana militer yang dihapus identitasnya dari catatan publik.
+
+Klaim teori ini menyebut bahwa:
+
+Ada operasi militer kecil di tahun 1983 yang dilakukan di masa lalu, untuk mengubah hasil diplomasi dengan negara tertentu.
+
+Perubahan minor pada peristiwa global kadang terjadi bukan karena sejarah berubah, tapi karena telah diatur ulang.
+
+Banyak “Déjà vu” atau kesalahan waktu yang dialami manusia merupakan efek samping dari realitas yang sempat berubah sebagian karena eksperimen waktu.
+
+
+Namun, proyek ini tetap dibatasi karena risiko paradoks waktu terlalu tinggi. Salah satu rumor menyebut tahun 2027 sebagai batas waktu kritis — titik di mana lompatan waktu bisa merusak struktur realitas secara permanen.`
+      }
+    ];
+function showStory(index) {
+  const story = stories[index];
+  document.body.innerHTML = `
+    <div class="story-content">
+      <h1>${story.title}</h1>
+      <img src="${story.img}" alt="${story.title}" />
+      <p>${story.content}</p>
+      <button class="back-button" onclick="showList()">Kembali ke Daftar</button>
+    </div>
+  `;
+}
+
+function showList(filter = '') {
+  let filteredStories = stories;
+  if (filter) {
+    filteredStories = stories.filter(s =>
+      s.title.toLowerCase().includes(filter.toLowerCase()) ||
+      s.desc.toLowerCase().includes(filter.toLowerCase())
+    );
+  }
+
+  let html = `
+    <h1>Teori Konspirasi Projek X ONE © Dimzzy Yagami</h1>
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Cari cerita..."
+      value="${filter}"
+      oninput="onSearchInput()"
+      style="margin-bottom: 20px; padding: 8px; width: 100%; max-width: 400px;"
+    />
+    <div class="list-story">
+  `;
+
+  if (filteredStories.length === 0) {
+    html += `<p>Tidak ada cerita yang cocok.</p>`;
+  } else {
+    filteredStories.forEach(s => {
+      const index = stories.indexOf(s);
+      html += `
+        <div class="story-card">
+          <img src="${s.img}" alt="${s.title}" class="story-image" />
+          <div class="story-title">${s.title}</div>
+          <div class="story-desc">${s.desc}</div>
+          <button onclick="showStory(${index})">Baca</button>
+        </div>
+      `;
+    });
+  }
+
+  html += `</div>`;
+
+  document.body.innerHTML = html;
+}
+let debounceTimer;
+
+function onSearchInput() {
+  clearTimeout(debounceTimer);
+  debounceTimer = setTimeout(() => {
+    const searchValue = document.getElementById('searchInput').value;
+    showList(searchValue);
+  }, 300);
+}
+
+window.onload = () => showList();
+
+
+window.onload = () => showList();
+  </script>
+</head
+<body>
+</body>
+</html>
